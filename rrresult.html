@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronic Kidney Disease Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            background-image: url('/static/daniel-frank-wKbWAMlHgNo-unsplash.jpg');
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+        }
+        h1 {
+            color: #333;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 20px;
+            color: #555;
+            margin-top: 20px;
+        }
+        #result {
+            color: #0d6efd;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Chronic Kidney Disease Prediction Result</h1>
+        <p>The model predicts that you are <span id="result"></span></p>
+    </div>
+    <script>
+        document.getElementById("result").innerText = "{{ result }}";
+    </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronic Kidney Disease Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            background-image: url('/static/pexels-chokniti-khongchum-2280547.jpg');
+            background-size: cover;
+            
+        }
+        h1 {
+            color: white;
+            margin-top: 20px;
+        }
+        form {
+            background: #fff;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        input {
+            width: 75%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+        div{
+            background-color: skyblue;
+        
+        
+        }
+        
+        
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Chronic Kidney Disease Prediction</h1>
+    </div>
+    <form method="POST" action="/predict">
+        <label for="age">Age:</label>
+        <input type="number" name="age" required>
+
+        <label for="blood_pressure">Blood Pressure:</label>
+        <input type="number" name="blood_pressure" required>
+
+        <label for="specific_gravity">Specific Gravity:</label>
+        <input type="number" name="specific_gravity" required>
+
+        <label for="albumin">Albumin:</label>
+        <input type="number" name="albumin" required>
+
+        <label for="sugar">Sugar:</label>
+        <input type="number" name="sugar" required>
+
+        <label for="red_blood_cells">Red Blood Cells:</label>
+        <input type="number" name="red_blood_cells" required>
+
+        <label for="pus_cell">Pus Cell:</label>
+        <input type="number" name="pus_cell" required>
+
+        <label for="pus_cell_clumps">Pus Cell Clumps:</label>
+        <input type="number" name="pus_cell_clumps" required>
+
+        <label for="bacteria">Bacteria:</label>
+        <input type="number" name="bacteria" required>
+
+        <label for="blood_glucose_random">Blood Glucose Random:</label>
+        <input type="number" name="blood_glucose_random" required>
+
+        <label for="blood_urea">Blood Urea:</label>
+        <input type="number" name="blood_urea" required>
+
+        <label for="serum_creatinine">Serum Creatinine:</label>
+        <input type="number" name="serum_creatinine" required>
+
+        <label for="sodium">Sodium:</label>
+        <input type="number" name="sodium" required>
+
+        <label for="potassium">Potassium:</label>
+        <input type="number" name="potassium" required>
+
+        <label for="haemoglobin">Haemoglobin:</label>
+        <input type="number" name="haemoglobin" required>
+
+        <label for="packed_cell_volume">Packed Cell Volume:</label>
+        <input type="number" name="packed_cell_volume" required>
+
+        <label for="white_blood_cell_count">White Blood Cell Count:</label>
+        <input type="number" name="white_blood_cell_count" required>
+
+        <label for="red_blood_cell_count">Red Blood Cell Count:</label>
+        <input type="number" name="red_blood_cell_count" required>
+
+        <label for="hypertension">Hypertension:</label>
+        <input type="number" name="hypertension" required>
+
+        <label for="diabetes_mellitus">Diabetes Mellitus:</label>
+        <input type="number" name="diabetes_mellitus" required>
+
+        <label for="coronary_artery_disease">Coronary Artery Disease:</label>
+        <input type="number" name="coronary_artery_disease" required>
+
+        <label for="appetite">Appetite:</label>
+        <input type="number" name="appetite" required>
+
+        <label for="peda_edema">Pedal Edema:</label>
+        <input type="number" name="peda_edema" required>
+
+        <label for="aanemia">Anemia:</label>
+        <input type="number" name="aanemia" required>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
